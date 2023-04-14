@@ -43,10 +43,8 @@ def get_custom_model_folder():
     if shared.cmd_opts.lora_dir and os.path.isdir(shared.cmd_opts.lora_dir):
         folders["lora"] = shared.cmd_opts.lora_dir
 
-#    if shared.cmd_opts.lycoris_dir and os.path.isdir(shared.cmd_opts.lycoris_dir):
-#        folders["lycoris"] = shared.cmd_opts.lycoris_dir
-
-
+    if shared.cmd_opts.lyco_dir and os.path.isdir(shared.cmd_opts.lyco_dir):
+        folders["lycoris"] = shared.cmd_opts.lyco_dir
 
 
 # write model info to file
